@@ -1,0 +1,8 @@
+- if User.logged?(session)
+  - Menu.list(User.current(session)).each do |menu|
+    = link_to menu.name, menu.ref
+  = link_to @user.name, @user
+- else
+  = link_to t('menu.lucy'), '/lucy'
+  = link_to t('menu.keywords'), '/keywords'
+  = link_to t('menu.news'), '/news'

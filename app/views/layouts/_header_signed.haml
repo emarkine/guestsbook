@@ -1,0 +1,18 @@
+.header
+  - if flash[:info] || flash[:notice] || flash[:alert] || flash[:error]
+    .flash
+      - if flash[:info]
+        #flash_info= flash[:info]
+      - if flash[:notice]
+        #flash_notice= flash[:notice]
+      - if flash[:alert]
+        #flash_alert= flash[:alert]
+      - if flash[:error]
+        #flash_error= flash[:error]
+  .title= render :partial => 'title'
+  .toolbar= render :partial => 'layouts/toolbar'
+  .menu= render :partial => 'layouts/menu'
+  -#.control= render :partial => 'control'
+
+
+

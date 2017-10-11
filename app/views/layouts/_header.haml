@@ -1,0 +1,27 @@
+%table{:class => :header}
+  %tr
+    %td{:class => :logo}= link_to image_tag('logo.png'), '/', :title => t(:home)
+    %td{:class => :title_canvas}
+      %canvas{ :id => :title_canvas}
+      -#= link_to image_tag('bezier.png'), '/', :title => t(:home)
+      #message
+        - if flash[:info]
+          #flash_info= flash[:info]
+        - if flash[:notice]
+          #flash_notice= flash[:notice]
+        - if flash[:alert]
+          #flash_alert= flash[:alert]
+        - if flash[:error]
+          #flash_error= flash[:error]
+    %td{:class => :right_block}
+      #eugenelab= link_to 'MarkeTraM', '/', :title => t(:click_to_login)
+      #login= render :partial => 'users/login'
+      #lang= render :partial => 'layouts/lang'
+  -#%tr
+    %td{:class => 'main-menu', :colspan => 3}
+      = render :partial => 'layouts/menu'
+  %tr
+    %td{:class => :toolbar, :colspan => 3}
+      = render :partial => 'layouts/toolbar'
+
+

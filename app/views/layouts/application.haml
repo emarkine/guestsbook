@@ -1,0 +1,32 @@
+!!! 5
+%html
+  %head
+    %title= @title
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %link{:rel => 'icon', :href => image_path('favicon.ico'), :type => 'image/ico'}
+
+  %body
+    %script{ :type => 'text/javascript'}
+      = "var rails_env = '#{ Rails.env }';".html_safe
+      = "var controller = '#{@controller}';".html_safe
+      = "var action = '#{@action}';".html_safe
+      = "var refresh_time = #{session[:refresh]};"
+    - if User.logged?(session)
+      = render :partial => 'layouts/header_signed'
+      .main= yield
+    - else
+      .center
+        %table
+          %tr
+            %td= render :partial => 'layouts/header'
+          %tr
+            %td
+              #page= yield
+          %tr
+            %td
+              %footer= render :partial => 'layouts/footer'
+
+
+

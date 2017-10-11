@@ -1,0 +1,3 @@
+-#- if User.logged?(session)
+  = button_to( t(:logout), destroy_user_session_path, :method => :delete)
+
