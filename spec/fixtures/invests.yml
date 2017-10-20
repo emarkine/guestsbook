@@ -1,6 +1,0 @@
-BancDeBinaryDemo:
-  broker: BancDeBinaryDemo
-  min: 1
-  max: 1000
-  chain: 5 10 20 50 100 250 500
-  frames: 60 90 120

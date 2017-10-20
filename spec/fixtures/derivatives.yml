@@ -1,5 +1,0 @@
-eurusd.Test:
-  name: eurusd.Test
-  type: Derivative::Binary
-  fund: eurusd
-  broker: Test

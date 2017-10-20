@@ -70,12 +70,13 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'bcrypt'
 
 gem 'thin'
 gem 'haml'
 gem 'watir'
 gem 'selenium-webdriver'
-# gem 'activerecord-session_store'
+gem 'activerecord-session_store'
 gem 'resque' # http://habrahabr.ru/post/141964/
 gem 'resque-scheduler'
 gem 'db-model', '~> 0.1.6'
