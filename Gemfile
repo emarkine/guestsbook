@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.1'
+gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -23,6 +23,7 @@ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -38,6 +39,12 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'cucumber-rails', :require => false
+  gem 'faker'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'factory_girl_rails'
 end
 
 group :development do
@@ -49,8 +56,26 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :test do
+  gem 'database_cleaner'
+  gem 'email_spec'
+  gem 'timecop'
+  gem 'launchy'
+  gem 'haml-rails'
+  gem 'hpricot'
+  gem 'web-app-theme'
+  gem 'html2haml'
+  gem 'watir-rspec'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'thin'
 gem 'haml'
+gem 'watir'
+gem 'selenium-webdriver'
+# gem 'activerecord-session_store'
+gem 'resque' # http://habrahabr.ru/post/141964/
+gem 'resque-scheduler'
+gem 'db-model', '~> 0.1.6'

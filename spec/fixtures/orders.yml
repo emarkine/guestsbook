@@ -1,0 +1,117 @@
+2016-07-11.08:27:00:
+  date: 2016-07-11
+  time: '08:27:00'
+  asset: DeGiro.aex.short.443
+  rate: 438.80
+  deal: 2016-07-11.08:27:00
+  picture: 2016-07-11.08:27:00
+  action: buy
+  count: 340
+  price: 0.65
+  amount: 221
+  comission: 2.04
+  transaction_id: 71676121
+
+2016-07-11.08:39:00:
+  date: 2016-07-11
+  time: '08:39:00'
+  asset: DeGiro.aex.short.443
+  rate: 438.20
+  deal: 2016-07-11.08:27:00
+  picture: 2016-07-11.08:39:00
+  action: sell
+  count: 340
+  price: 0.71
+  amount: 241
+  comission: 2.05
+  transaction_id: 71676213
+
+2016-07-11.08:46:00:
+  date: 2016-07-11
+  time: '08:46:00'
+  asset: DeGiro.aex.long.419
+  rate: 437.85
+  deal: 2016-07-11.08:46:00
+  picture: 2016-07-11.08:46:00
+  action: buy
+  count: 100
+  price: 2.09
+  amount: 209
+  comission: 2.04
+  transaction_id: 71676695
+
+2016-07-11.09:11:00:
+  date: 2016-07-11
+  time: '09:11:00'
+  asset: DeGiro.aex.long.419
+  rate: 438.25
+  deal: 2016-07-11.08:46:00
+  picture: 2016-07-11.09:11:00
+  action: sell
+  count: 100
+  price: 2.15
+  amount: 215
+  comission: 2.04
+  transaction_id: 71680586
+
+2016-07-11.09:13:31:
+  date: 2016-07-11
+  time: '09:13:31'
+  asset: Lynx.aex.short.443
+  rate: 438.45
+  deal: 2016-07-11.09:13:31
+  picture: 2016-07-11.09:13:31
+  action: buy
+  count: 1000
+  price: 0.70
+  amount: 700
+  comission: 5.40
+  transaction_id: 0000fb13.57832a87.01.01
+
+2016-07-11.09:36:01:
+  date: 2016-07-11
+  time: '09:36:01'
+  asset: Lynx.aex.short.443
+  rate: 437.55
+  deal: 2016-07-11.09:13:31
+  picture: 2016-07-11.09:36:01
+  action: buy
+  count: 1000
+  price: 0.77
+  amount: 770
+  comission: 5.40
+  transaction_id: 0000fb13.57832b8d.01.01
+
+2016-07-11.09:38:30:
+  date: 2016-07-11
+  time: '09:38:30'
+  asset: TwentyFourOption.aex.600
+  rate: 437.43
+  deal: 2016-07-11.09:38:30
+  picture: 2016-07-11.09:38:30
+  action: high
+  amount: 25
+  transaction_id: 48739077
+
+2016-07-11.09:45:00:
+  date: 2016-07-11
+  time: '09:45:00'
+  asset: TwentyFourOption.aex.600
+  rate: 436.87
+  deal: 2016-07-11.09:38:30
+  picture: 2016-07-11.09:38:30
+  action: expiry
+  amount: 0
+  transaction_id: 48739077
+
+2016-07-11.09:45:23:
+  date: 2016-07-11
+  time: '09:45:23'
+  asset: TwentyFourOption.dax.600
+  rate: 9742.00
+  deal: 2016-07-11.09:38:30
+  picture: 2016-07-11.09:38:30
+  action: high
+  amount: 25
+  transaction_id: 48739077
+

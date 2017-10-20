@@ -1,0 +1,23 @@
+rndLucy:
+  crystal: rnd
+  robot: Lucy
+
+bolBollica:
+  crystal: bol
+  robot: Bollica
+
+Bollica:
+  crystal: line
+  robot: Bollica
+
+rsiBollica:
+  crystal: rsi
+  robot: Bollica
+
+macdMila:
+  crystal: macd
+  robot: Mila
+
+#:
+#  crystal:
+#  robot:

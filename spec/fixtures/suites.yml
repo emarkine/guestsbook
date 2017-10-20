@@ -1,0 +1,7 @@
+1:
+  id: 1
+  name: NASDAQ Demo 24option
+  fund_id: 302 # nasdaq
+  broker_id: 3 # Demo 24option
+  start: '15:10'
+  finish: '19:55'

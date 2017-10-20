@@ -1,0 +1,70 @@
+indicators:
+  name: indicators
+  ref: "/indicators"
+  position: 1
+
+deals:
+  name: deals
+  ref: "/deals"
+  position: 2
+
+orders:
+  name: orders
+  ref: "/orders"
+  position: 3
+
+assets:
+  name: assets
+  ref: "/assets"
+  position: 4
+
+brokers:
+  name: brokers
+  ref: "/brokers"
+  position: 5
+
+services:
+  name: services
+  ref: "/services"
+  position: 2
+
+nodes:
+  name: nodes
+  ref: "/nodes"
+  position: 3
+
+crystals:
+  name: crystals
+  ref: "/crystals"
+  position: 4
+
+#lucy:
+#  name: lucy
+#  ref: "/lucy"
+#  position: 5
+
+robots:
+  name: robots
+  ref: "/robots"
+  position: 6
+
+rooms:
+  name: rooms
+  ref: "/rooms"
+  position: 6
+
+events:
+  name: events
+  ref: "/events"
+  position: 7
+
+guests:
+  name: guests
+  ref: "/guests"
+  position: 8
+
+entries:
+  name: entries
+  ref: "/entries"
+  position: 9
+

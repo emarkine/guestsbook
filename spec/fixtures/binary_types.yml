@@ -1,0 +1,97 @@
+turbo0call:
+  id: 1
+  sort: turbo
+  action: call
+  delta: 30
+
+turbo0put:
+  id: 2
+  sort: turbo
+  action: put
+  delta: 30
+
+turbo1call:
+  id: 3
+  sort: turbo
+  action: call
+  delta: 60
+
+turbo1put:
+  id: 4
+  sort: turbo
+  action: put
+  delta: 60
+
+turbo2call:
+  id: 5
+  sort: turbo
+  action: call
+  delta: 120
+
+turbo2put:
+  id: 6
+  sort: turbo
+  action: put
+  delta: 120
+
+turbo5call:
+  id: 7
+  sort: turbo
+  action: call
+  delta: 300
+
+turbo5put:
+  id: 8
+  sort: turbo
+  action: put
+  delta: 300
+
+binarycall:
+  id: 9
+  sort: binary
+  action: call
+
+binaryput:
+  id: 10
+  sort: binary
+  action: put
+
+range_in:
+  id: 11
+  sort: range
+  action: in
+
+range_out:
+  id: 12
+  sort: range
+  action: out
+
+touch_up:
+  id: 13
+  sort: touch
+  action: up
+
+touch_no_up:
+  id: 14
+  sort: touch
+  action: no_up
+
+touch_down:
+  id: 15
+  sort: touch
+  action: down
+
+touch_no_down:
+  id: 16
+  sort: touch
+  action: no_down
+
+touch_one:
+  id: 17
+  sort: touch
+  action: one
+
+touch_no:
+  id: 18
+  sort: touch
+  action: 'no'

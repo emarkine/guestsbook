@@ -1,0 +1,75 @@
+Eugene:
+  name: Eugene
+  surname: Markine
+  birthday: 1968-10-16
+  personal_code: '224400125'
+  mobile: "+31 6 28736786"
+  phone_home: "+31 20 7702689"
+  phone_work:
+  skype: gromogryzl
+  site: http://eugenelab.com/
+  company: EugeneLab
+  activity: consultant, software development
+  street: Buikslotermeerplein 449
+  postcode: 1025WR
+  city: Amsterdam
+  region:
+  country_id: 153
+  invited_id: 1
+  about: I am a software engineering professional with experience developing and managing
+    a wide range of applications for various industries. I live in Amsterdam, the
+    Netherlands.
+  email: eugene@markine.nl
+  note:
+
+Mischa:
+  name: Mischa
+  surname: Markin
+  birthday: 2006-02-20
+  site: http://mischa.markin.nl/
+  email: mischa@markin.nl
+
+Admin:
+  name: Admin
+  surname: MarketTram
+  birthday: 2012-02-24
+  phone_home:
+  phone_work:
+  skype:
+  site: http://admin.marketram.com/
+  company: MarkeTraM
+  activity: Admin
+  city: Amsterdam
+  region:
+  country_id: 153
+  invited_id:
+  about:
+  properties:
+  note:
+  start_page:
+  email: info@eugenelab.com
+
+Tester:
+  name: Tester
+  surname: MarketTram
+  birthday: 2015-04-30
+  personal_code:
+#  mobile: "+31 6 28736786"
+  phone_home:
+  phone_work:
+  skype:
+  site: http://tester.marketram.com/
+  company: MarkeTraM
+  activity: Test
+  street:
+  postcode:
+  city: Amsterdam
+  region:
+  country_id: 153
+  email: tester@marketram.com
+
+Lucy:
+  name: Lucy
+  surname: Marketram
+  email: guestsbook.eu@gmail.com
+  password: uydXrqJghT

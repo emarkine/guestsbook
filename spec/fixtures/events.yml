@@ -1,0 +1,89 @@
+# http://ru.investing.com/economic-calendar/
+nonfarm:
+  id: 1
+  name: Nonfarm Payrolls
+  location: USA
+  periodicity: monthly
+  week: 1
+  day: Friday
+  date: 2014-11-07
+  time: '14:30'
+  link: '[http://finviz.com/calendar.ashx,http://ru.investing.com/economic-calendar/nonfarm-payrolls-227]'
+  description: количество новых рабочих мест созданных в несельскохозяйственных отраслях экономики
+  note: |
+    Публикация данных по Nonfarm Payrolls — 1 из главных новостей для финансовых рынков.
+    Каждую первую пятницу месяца рынки замирают в преддверии новости, а цены экстремально изменяются после ее публикации.
+    Данная новость принуждает трепетать даже опытных трейдеров с огромным стажем торговли.
+    Nonfarm payrolls - в США - ежемесячный индикатор, характеризующий количество новых рабочих мест, созданных в несельскохозяйственных отраслях экономики за месяц.
+    Прирост этого показателя характеризует увеличение занятости и приводит к росту курса доллара на валютных рынках.
+    Существует эмпирическое правило, согласно которому увеличение Nonfarm payrolls на 200 000 в месяц приравнивается к увеличению ВВП на 3.0%
+
+unemployment:
+  id: 2
+  name: Unemployment Rate
+  location: USA
+  periodicity: monthly
+  week: 1
+  day: Friday
+  date: 2014-11-07
+  time: '14:30'
+  link:
+  description: уровень безработицы
+  note: |
+
+before_christmas_holiday:
+  id: 3
+  name: Day Before Christmas
+  sort: holiday
+  periodicity: yearly
+  date: 2014-12-24
+  description: некоторые биржы закрыты
+
+before_christmas_close:
+  id: 4
+  name: Day Before Christmas
+  sort: close
+  periodicity: yearly
+  date: 2014-12-24
+  description: биржы закрываются раньше
+
+christmas:
+  id: 5
+  name: Christmas
+  sort: holiday
+  periodicity: yearly
+  date: 2014-12-25
+  description: все биржы закрыты
+
+after_christmas:
+  id: 6
+  name: Day After Christmas
+  sort: holiday
+  periodicity: yearly
+  date: 2014-12-26
+  description: некоторые биржы закрыты
+
+before_new_year:
+  id: 7
+  name: Day Before New Year
+  sort: close
+  periodicity: yearly
+  date: 2014-12-31
+  description: биржы закрываются раньше
+
+new_year:
+  id: 8
+  name: New Year
+  sort: holiday
+  periodicity: yearly
+  date: 2015-01-01
+  description: все биржы закрыты
+
+after_new_year:
+  id: 9
+  name: Day After New Year
+  sort: close
+  periodicity: yearly
+  date: 2015-01-02
+  description: некоторые биржы закрыты
+

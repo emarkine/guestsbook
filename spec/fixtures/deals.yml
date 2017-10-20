@@ -1,0 +1,32 @@
+2016-07-11.08:27:00:
+  trade: 2016-07-11
+  fund: fti
+  broker: DeGiro
+  direction: short
+  volume: 241
+  result: 15.91
+
+2016-07-11.08:46:00:
+  trade: 2016-07-11
+  fund: fti
+  broker: DeGiro
+  direction: long
+  volume: 215
+  result: 1.92
+
+2016-07-11.09:13:31:
+  trade: 2016-07-11
+  fund: fti
+  broker: Lynx
+  direction: short
+  volume: 770
+  result: 59.20
+
+2016-07-11.09:38:30:
+  trade: 2016-07-11
+  fund: fti
+  broker: TwentyFourOption
+  direction: high
+  delta: 600
+  volume: 25
+  result: -25
