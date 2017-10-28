@@ -29,8 +29,6 @@ class ApplicationController < ActionController::Base
       session[:user] = @user.id
       session[:refresh] ||= 5
     end
-    session[:indicator] = Indicator.session unless session[:indicator]
-    session[:set] = Setting.session unless session[:set]
   end
 
   def authenticate_user!
