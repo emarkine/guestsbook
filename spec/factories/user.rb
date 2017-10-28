@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   LANGUAGES = Hash[*%w(nl Dutch en English fr French ru Russian)]
 
   factory :user do
