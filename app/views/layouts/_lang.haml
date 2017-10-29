@@ -1,0 +1,3 @@
+= form_tag "/locale", :method => :get, :class => 'lang-form', :id => 'locale-form' do
+  = hidden_field_tag :path, request.path
+  = select_tag :locale, options_for_select([["English",'en'],['Русский','ru']], session[:locale]) #, { :dir => 'rtl'}

@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 
 
   def init
-    @title = 'Lucy Apartment'
+    @title = I18n.t :title
     # почему-то не сбрасываются флешки
     # flash[:notice] = nil
     # flash[:info] = nil
