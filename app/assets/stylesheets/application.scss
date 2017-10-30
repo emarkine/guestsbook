@@ -1,0 +1,575 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+@import "variables";
+
+/*==================================================== Global ========================================================*/
+
+body, p, ol, ul, td, div, input, textarea, select {
+  font-family: arial, helvetica, sans-serif;
+  text-align: left;
+  font-size: $font-size;
+  color: $text;
+  //line-height: 18px;
+  text-align: left;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+  float: left;
+}
+
+table {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: $font-size;
+  border-collapse: collapse;
+  th, td {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+img {
+  border: 0px;
+}
+
+/*========================================================== Layout =================================================*/
+
+.center {
+  width: 80%;
+  min-width: 800px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+table.header {
+  table-layout: fixed;
+  border-collapse: collapse;
+  //width: 100%;
+  min-width: 800px;
+  margin-top: 30px;
+  td.logo {
+    vertical-align: top;
+    width: 65px;
+    height: 80px;
+    //    max-height: 80px;
+    //    display: inline-block;
+    overflow: hidden;
+    //    background-color: burlywood;
+    img {
+      width: 65px;
+      height: 80px;
+    }
+    //    white-space: nowrap;
+  }
+  td.splash {
+        float: left;
+    //    width: 300px;
+    height: 80px;
+    //overflow: hidden;
+    vertical-align: top;
+
+    //    max-height: 80px;
+    padding: 0px 5px 0px 10px;
+    canvas {
+      z-index: 1;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      height: 80px;
+      width: 100%;
+      border: 1px $border solid;
+      //      background-color: yellowgreen;
+    }
+    img {
+      //      float: left;
+      z-index: 1;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      //      width: 600px;
+      height: 80px;
+    }
+    #message {
+      //      float: left;
+      z-index: 2;
+      position: relative;
+      left: 0px;
+      top: -80px;
+      height: 0px;
+    }
+  }
+  td.right_block {
+    vertical-align: top;
+    //    background: yellow;
+    height: 80px;
+    //    width: auto;
+    width: 150px;
+    //    min-width: 50px;
+    //    overflow: hidden;
+    //    width: 100%;
+    //    max-height: 80px;
+    #login {
+      float: right;
+      margin: 0px;
+      padding-left: 15px;
+      display: none;
+      form {
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        width: 100%;
+        border: 0px;
+        input {
+          //          font-size: $font-size-small;
+          height: 16px;
+          float: left;
+        }
+        input.email {
+          width: 130px;
+        }
+        input.password {
+          margin-top: 5px;
+          width: 75px;
+        }
+        input[type=submit] {
+          float: right;
+          height: 22px;
+          width: 45px;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    #lang {
+      float: right;
+      clear: both;
+      height: 20px;
+      padding-top: 31px;
+      margin-right: -2px;
+      //      form {
+      //        select {
+      //          text-align: right;
+      //          border-radius: 0;
+      //          background: transparent;
+      //          height: 18px;
+      //          width: auto;
+      //          width: 80px;
+      //          padding-right: 10px;
+      ////          padding: 0px 5px 0px 15px;
+      //          border: 0;
+      //          line-height: 1;
+      //          -webkit-appearance: none;
+      //          outline:none;
+      //          display: inline-block;
+      ////          width: 268px;
+      //          font-size: $font-size;
+      //          border: 1px $border solid;
+      //        }
+      //      }
+    }
+  }
+  td.main-menu {
+    width: 100%;
+    padding-top: 12px;
+    text-align: left;
+    a {
+      margin-left: 10px;
+    }
+  }
+}
+
+.lang {
+  float: right;
+  clear: both;
+  height: 24px;
+  margin-right: -2px;
+}
+
+footer {
+  padding-top: 20px;
+  clear: both;
+  height: 20px;
+  #email {
+    float: left;
+  }
+  #info {
+    padding-left: 20px;
+  }
+  #copyright {
+    //    margin: 5px;
+    float: right;
+  }
+}
+
+.header {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-top: 10px;
+  .title {
+    float: left;
+    clear: both;
+    .lights {
+      float: left;
+      clear: both;
+      margin-left: 10px;
+      width: 145px;
+      min-width: 145px;
+    }
+    .title {
+      float: left;
+      clear: both;
+      font-weight: bold;
+      margin-left: 13px;
+    }
+    .rate {
+      float: right;
+      margin-right: 10px;
+    }
+  }
+}
+
+.light {
+  float: left;
+  margin-right: 2px;
+}
+
+.menu {
+  float: right;
+  margin-right: 10px;
+  a {
+    margin-left: 5px;
+  }
+
+}
+
+.control {
+  float: right;
+  margin-right: 10px;
+  clear: both;
+  a {
+    margin-left: 5px;
+  }
+}
+
+.main {
+  clear: both;
+  float: left;
+  //  min-width: 1400px;
+  margin-left: 10px;
+  margin-top: 5px;
+  //  width: 100%;
+  //  height: 100%;
+}
+
+/*=================================================== Toolbar =======================================================*/
+
+.toolbar {
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  #frame {
+    float: left;
+    border: 1px $border solid;
+    padding: 3px;
+    text-align: center;
+    margin-right: 3px;
+    height: 26px;
+    border-radius: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    outline: none;
+    display: inline-block;
+  }
+
+  img {
+    border: 1px $border solid;
+  }
+
+  .tool.false {
+    background: white;
+  }
+  .tool.true {
+    background: lightgrey;
+    border: 1px $dark_border solid;
+  }
+
+  .tool-fund.false {
+    background: white;
+  }
+  .tool-fund.true {
+    background: lightgrey;
+    border: 1px $dark_border solid;
+  }
+
+}
+
+/*=================================================== Classes =======================================================*/
+
+.line {
+  float: left;
+  clear: both;
+  margin-bottom: 5px;
+  a {
+    padding-left: 5px;
+    text-decoration: none;
+    color: $text;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.action {
+  float: left;
+  clear: both;
+}
+
+div.right {
+  float: right;
+  padding-right: 20px;
+}
+
+span.right {
+  float: right;
+  padding-right: 5px;
+}
+
+div.label {
+  float: left;
+  font-weight: normal;
+  margin: 0px 10px 0px 0px;
+}
+
+.show {
+  float: left;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.currency {
+  float: left;
+}
+
+table.list {
+  float: left;
+  clear: both;
+  margin-left: 2px;
+  margin-right: 20px;
+  td, th {
+    padding: 2px 4px 2px 4px;
+    border: 1px $border solid;
+  }
+  td.watch {
+    text-align: center;
+  }
+  td.right {
+    text-align: right;
+  }
+  td.arrow {
+    text-align: center;
+    border: 1px $border solid;
+    img {
+      width: 12px;
+      height: 14px;
+    }
+  }
+  th.arrow {
+    width: 36px;
+    img {
+      //      float: left;
+      width: 10px;
+      height: 14px;
+    }
+  }
+}
+
+.paginate {
+  float: left;
+  clear: both;
+  margin-bottom: 5px;
+}
+
+.red {
+  color: red;
+  padding-right: 3px;
+}
+
+.green {
+  color: green;
+  padding-right: 3px;
+}
+
+.blue {
+  color: blue;
+  padding-right: 3px;
+}
+
+/*==================================================== Rails =========================================================*/
+.flash {
+  float: left;
+  clear: both;
+  margin: 5px;
+}
+
+#flash_info {
+  color: white;
+  background-color: yellowgreen;
+  padding: 0px 10px 0px 10px;
+}
+
+#flash_notice {
+  color: white;
+  background-color: green;
+  padding: 0px 10px 0px 10px;
+}
+
+#flash_error {
+  color: red;
+  font-weight: bold;
+  //background-color: red;
+  padding: 0px 10px 0px 10px;
+  h2 {
+    margin: 0px;
+    padding: 0px;
+  }
+  p {
+    color: red;
+  }
+  ul {
+    margin: 0px;
+    padding: 5px 10px 10px 30px;
+  }
+  li {
+    font-weight: normal;
+    color: red;
+  }
+}
+
+#flash_alert {
+  color: white;
+  background-color: blue;
+  padding: 0px 10px 0px 10px;
+}
+
+table.rails {
+  td, th {
+    border: 1px solid $border;
+    padding: 3px;
+  }
+
+}
+
+form {
+  float: left;
+  clear: both;
+  #error_explanation {
+    color: red;
+  }
+  .field {
+    float: left;
+    clear: both;
+    width: 100%;
+    padding-top: 5px;
+    .field_with_errors {
+      label {
+        float: left;
+        padding-top: 5px;
+      }
+      input, select {
+        float: left;
+        margin-left: 10px;
+        border: 1px solid red;
+      }
+    }
+    label {
+      float: left;
+      padding-top: 5px;
+    }
+    input, select {
+      float: left;
+      margin-left: 10px;
+    }
+    textarea {
+      float: left;
+      margin-left: 10px;
+      height: 100px;
+    }
+  }
+  .actions {
+    padding-top: 5px;
+    float: right;
+    clear: both;
+  }
+}
+
+/*=================================================== Extras =========================================================*/
+
+.empty-form {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+}
+
+.upload-form {
+  position: relative;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  .wrapper {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    :hover {
+      opacity: 0.5;
+    }
+  }
+  input[type=image] {
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.check_box {
+  float: left;
+}
+
+
+/*==================================================== Form ==========================================================*/
+table.form {
+  th, td {
+    border: 1px solid $border;
+    padding: 5px;
+  }
+  td.error {
+    color: red;
+  }
+  td.message {
+    color: brown;
+  }
+  input[type=image] {
+    float: right;
+  }
+}

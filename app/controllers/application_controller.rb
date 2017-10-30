@@ -29,6 +29,10 @@ class ApplicationController < ActionController::Base
       session[:user] = @user.id
       session[:refresh] ||= 5
     end
+    flash[:info] = "info"
+    flash[:notice] = "notice"
+    flash[:alert] = "alert"
+    flash[:error] = "error"
   end
 
   def authenticate_user!

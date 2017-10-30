@@ -1,17 +1,18 @@
 %table{:class => :header}
   %tr
     %td{:class => :logo}= link_to image_tag('logo.png'), '/', :title => t(:home)
-    %td{:class => :message}
-      - if flash[:info]
-        #flash_info= flash[:info]
-      - if flash[:notice]
-        #flash_notice= flash[:notice]
-      - if flash[:alert]
-        #flash_alert= flash[:alert]
-      - if flash[:error]
-        #flash_error= flash[:error]
+    %td{:class => :splash}
+      %canvas{ :id => :title_canvas}
+      #message
+        - if flash[:info]
+          #flash_info= flash[:info]
+        - if flash[:notice]
+          #flash_notice= flash[:notice]
+        - if flash[:alert]
+          #flash_alert= flash[:alert]
+        - if flash[:error]
+          #flash_error= flash[:error]
     %td{:class => :right_block}
-      #eugenelab= link_to t(:title), '/', :title => t(:click_to_login)
       #login= render :partial => 'users/login'
       #lang= render :partial => 'layouts/lang'
   -#%tr
