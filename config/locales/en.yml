@@ -4,6 +4,11 @@ en:
   create: create
   update: update
   send: send
+  email: 'lucy.marketram@gmail.com'
+  phone: '+31634060400'
+  contact_reservation: 'Please contact for the reservation:'
+
+# login block
   password: password
   login: login
   logout: logout

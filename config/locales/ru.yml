@@ -4,6 +4,11 @@ ru:
   create: создать
   update: обновить
   send: отправить
+  email: 'lucy.marketram@gmail.com'
+  phone: '+31634060400'
+  contact_reservation: 'Свяжитесь по вопросам резервации:'
+
+
   password: пароль
   login: вход
   logout: выход

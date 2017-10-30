@@ -1,13 +1,7 @@
-%h3 Please contact for the reservation
-#email
-  = link_to image_tag('email.png'), 'lucy.marketram@gmail.com', :title => t('mailer.send')
-#info
-  MarkeTraM
-#info
-  +31634060400
-#info
-  KvK 34215257 (Amsterdam)
+%h3= t(:contact_reservation)
+#phone= t(:phone)
+#email= mail_to t(:email), t(:email)
 #copyright
-  2013
+  2015
   &copy;
   = Time.now.year

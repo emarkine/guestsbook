@@ -12,21 +12,16 @@
       = "var rails_env = '#{ Rails.env }';".html_safe
       = "var controller = '#{@controller}';".html_safe
       = "var action = '#{@action}';".html_safe
-      = "var refresh_time = #{session[:refresh]};"
-    - if User.logged?(session)
-      = render :partial => 'layouts/header_signed'
-      .main= yield
-    - else
-      .center
-        %table
-          %tr
-            %td= render :partial => 'layouts/header'
-          %tr
-            %td
-              #page= yield
-          %tr
-            %td
-              %footer= render :partial => 'layouts/footer'
+    .center
+      %table
+        %tr
+          %td= render :partial => 'layouts/header'
+        %tr
+          %td
+            #page= yield
+        %tr
+          %td
+            %footer= render :partial => 'layouts/footer'
 
 
 
