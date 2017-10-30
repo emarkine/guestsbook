@@ -82,5 +82,5 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['GUESTSBOOK_DATABASE_URL'] %>
+#  url: <%= ENV['GUESTSBOOK_DATABASE_URL'] %>
   database: guestsbook_production
