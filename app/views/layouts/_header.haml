@@ -1,23 +1,15 @@
-%table{:class => :header}
-  %tr
-    %td{:class => :logo}= link_to image_tag('logo.png'), '/', :title => t(:home)
-    %td{:class => :splash}
-      %canvas{ :id => :title_canvas}
-      #message
-        - if flash[:info]
-          #flash_info= flash[:info]
-        - if flash[:notice]
-          #flash_notice= flash[:notice]
-        - if flash[:alert]
-          #flash_alert= flash[:alert]
-        - if flash[:error]
-          #flash_error= flash[:error]
-    %td{:class => :right_block}
-      #login= render :partial => 'users/login'
-      #lang= render :partial => 'layouts/lang'
-  -#%tr
-  -#  %td{:class => :toolbar, :colspan => 3}
-  -#    = render :partial => 'layouts/toolbar'
-  %tr
-    %td{:class => 'main-menu', :colspan => 3}
-      = render :partial => 'layouts/menu'
+#logo= link_to image_tag('logo.png'), '/', :title => t(:home)
+#splash
+  %canvas{ :id => :title_canvas}
+  #message
+    - if flash[:info]
+      #flash_info= flash[:info]
+    - if flash[:notice]
+      #flash_notice= flash[:notice]
+    - if flash[:alert]
+      #flash_alert= flash[:alert]
+    - if flash[:error]
+      #flash_error= flash[:error]
+#control
+  #login= render :partial => 'users/login'
+  #lang= render :partial => 'layouts/lang'

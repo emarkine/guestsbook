@@ -47,45 +47,59 @@ img {
 
 /*========================================================== Layout =================================================*/
 
-.center {
-  width: 80%;
-  min-width: 800px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+#center-absolute {
+  position:absolute;
+  top:50%;
+  left:50%;
+  padding:15px;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
-table.header {
-  table-layout: fixed;
-  border-collapse: collapse;
-  //width: 100%;
-  min-width: 800px;
-  margin-top: 30px;
-  td.logo {
+#center {
+  position: absolute;
+  left: 50%;
+  padding: 10px;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+//#container {
+//  width: 100%;
+//  text-align: center;
+//}
+//
+//#content {
+//  //display: inline-block;
+//  //width: 1300px;
+//  display: table;
+//  margin: 0 auto;
+//}
+
+#header {
+  //min-width: 800px;
+  //margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  clear: both;
+  #logo {
+    float: left;
     vertical-align: top;
     width: 65px;
     height: 80px;
-    //    max-height: 80px;
-    //    display: inline-block;
     overflow: hidden;
-    //    background-color: burlywood;
     img {
       width: 65px;
       height: 80px;
     }
-    //    white-space: nowrap;
   }
-  td.splash {
-        float: left;
-    //    width: 300px;
+  #splash {
+    float: left;
     height: 80px;
-    //overflow: hidden;
-    vertical-align: top;
-
-    //    max-height: 80px;
+    width: 1100px;
     padding: 0px 5px 0px 10px;
     canvas {
       z-index: 1;
@@ -95,19 +109,17 @@ table.header {
       height: 80px;
       width: 100%;
       border: 1px $border solid;
-      //      background-color: yellowgreen;
     }
     img {
-      //      float: left;
       z-index: 1;
       position: relative;
       top: 0px;
       left: 0px;
-      //      width: 600px;
       height: 80px;
     }
     #message {
-      //      float: left;
+      float: left;
+      clear: both;
       z-index: 2;
       position: relative;
       left: 0px;
@@ -115,16 +127,11 @@ table.header {
       height: 0px;
     }
   }
-  td.right_block {
+  #control {
+    float: right;
     vertical-align: top;
-    //    background: yellow;
     height: 80px;
-    //    width: auto;
-    width: 150px;
-    //    min-width: 50px;
-    //    overflow: hidden;
-    //    width: 100%;
-    //    max-height: 80px;
+    width: 100px;
     #login {
       float: right;
       margin: 0px;
@@ -159,10 +166,10 @@ table.header {
 
     #lang {
       float: right;
-      clear: both;
+      vertical-align: top;
       height: 20px;
-      padding-top: 31px;
-      margin-right: -2px;
+      padding-top: 5px;
+      margin-right: 10px;
       //      form {
       //        select {
       //          text-align: right;
@@ -185,91 +192,20 @@ table.header {
       //      }
     }
   }
-  td.main-menu {
-    width: 100%;
-    padding-top: 12px;
-    text-align: left;
-    a {
-      margin-left: 10px;
-    }
-  }
 }
 
-.lang {
-  float: right;
-  clear: both;
-  height: 24px;
-  margin-right: -2px;
-}
-
-footer {
-  padding-top: 20px;
-  clear: both;
-  height: 20px;
-  #email {
-    float: left;
-  }
-  #info {
-    padding-left: 20px;
-  }
-  #copyright {
-    //    margin: 5px;
-    float: right;
-  }
-}
-
-.header {
+#menu {
   float: left;
   clear: both;
   width: 100%;
-  margin-top: 10px;
-  .title {
-    float: left;
-    clear: both;
-    .lights {
-      float: left;
-      clear: both;
-      margin-left: 10px;
-      width: 145px;
-      min-width: 145px;
-    }
-    .title {
-      float: left;
-      clear: both;
-      font-weight: bold;
-      margin-left: 13px;
-    }
-    .rate {
-      float: right;
-      margin-right: 10px;
-    }
-  }
-}
-
-.light {
-  float: left;
-  margin-right: 2px;
-}
-
-.menu {
-  float: right;
-  margin-right: 10px;
+  padding-top: 12px;
+  text-align: left;
   a {
-    margin-left: 5px;
-  }
-
-}
-
-.control {
-  float: right;
-  margin-right: 10px;
-  clear: both;
-  a {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 }
 
-.main {
+#page {
   clear: both;
   float: left;
   //  min-width: 1400px;
@@ -279,47 +215,30 @@ footer {
   //  height: 100%;
 }
 
-/*=================================================== Toolbar =======================================================*/
-
-.toolbar {
+#footer {
   float: left;
-  margin-left: 10px;
-  margin-top: 5px;
-  #frame {
+  clear: both;
+  width: 100%;
+  padding: 10px;
+  height: 20px;
+  #info {
     float: left;
-    border: 1px $border solid;
-    padding: 3px;
-    text-align: center;
-    margin-right: 3px;
-    height: 26px;
-    border-radius: 0;
-    background: transparent;
-    -webkit-appearance: none;
-    outline: none;
-    display: inline-block;
+    font-weight: bold;
   }
-
-  img {
-    border: 1px $border solid;
+  #phone {
+    clear: both;
+    float: left;
   }
-
-  .tool.false {
-    background: white;
+  #email {
+    clear: both;
+    float: left;
   }
-  .tool.true {
-    background: lightgrey;
-    border: 1px $dark_border solid;
+  #copyright {
+    float: right;
   }
-
-  .tool-fund.false {
-    background: white;
-  }
-  .tool-fund.true {
-    background: lightgrey;
-    border: 1px $dark_border solid;
-  }
-
 }
+
+
 
 /*=================================================== Classes =======================================================*/
 
@@ -424,25 +343,34 @@ table.list {
 }
 
 /*==================================================== Rails =========================================================*/
-.flash {
-  float: left;
-  clear: both;
-  margin: 5px;
-}
 
 #flash_info {
+  clear: both;
+  float: left;
   color: white;
   background-color: yellowgreen;
   padding: 0px 10px 0px 10px;
 }
 
 #flash_notice {
+  clear: both;
+  float: left;
   color: white;
   background-color: green;
   padding: 0px 10px 0px 10px;
 }
 
+#flash_alert {
+  clear: both;
+  float: left;
+  color: white;
+  background-color: blue;
+  padding: 0px 10px 0px 10px;
+}
+
 #flash_error {
+  clear: both;
+  float: left;
   color: red;
   font-weight: bold;
   //background-color: red;
@@ -462,12 +390,6 @@ table.list {
     font-weight: normal;
     color: red;
   }
-}
-
-#flash_alert {
-  color: white;
-  background-color: blue;
-  padding: 0px 10px 0px 10px;
 }
 
 table.rails {

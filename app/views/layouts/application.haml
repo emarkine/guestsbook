@@ -12,16 +12,11 @@
       = "var rails_env = '#{ Rails.env }';".html_safe
       = "var controller = '#{@controller}';".html_safe
       = "var action = '#{@action}';".html_safe
-    .center
-      %table
-        %tr
-          %td= render :partial => 'layouts/header'
-        %tr
-          %td
-            #page= yield
-        %tr
-          %td
-            %footer= render :partial => 'layouts/footer'
+    #center
+      #header= render :partial => 'layouts/header'
+      #menu= render :partial => 'layouts/menu'
+      #page= yield
+      #footer= render :partial => 'layouts/footer'
 
 
 
