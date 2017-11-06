@@ -11,9 +11,14 @@ body, p, ol, ul, td, div, input, textarea, select {
   font-family: arial, helvetica, sans-serif;
   text-align: left;
   font-size: $font-size;
-  color: $text;
+  color: $color-text;
   //line-height: 18px;
   text-align: left;
+}
+
+h1 {
+  color: $color-brown;
+
 }
 
 p {
@@ -71,17 +76,6 @@ img {
   transform: translate(-50%);
 }
 
-//#container {
-//  width: 100%;
-//  text-align: center;
-//}
-//
-//#content {
-//  //display: inline-block;
-//  //width: 1300px;
-//  display: table;
-//  margin: 0 auto;
-//}
 
 #header {
   //min-width: 800px;
@@ -113,7 +107,7 @@ img {
       left: 0px;
       height: 80px;
       width: 100%;
-      border: 1px $border solid;
+      border: 1px $color-border solid;
     }
     img {
       z-index: 1;
@@ -254,7 +248,7 @@ img {
   a {
     padding-left: 5px;
     text-decoration: none;
-    color: $text;
+    color: $color-text;
     font-weight: bold;
   }
   a:hover {
@@ -300,7 +294,7 @@ table.list {
   margin-right: 20px;
   td, th {
     padding: 2px 4px 2px 4px;
-    border: 1px $border solid;
+    border: 1px $color-border solid;
   }
   td.watch {
     text-align: center;
@@ -310,7 +304,7 @@ table.list {
   }
   td.arrow {
     text-align: center;
-    border: 1px $border solid;
+    border: 1px $color-border solid;
     img {
       width: 12px;
       height: 14px;
@@ -399,7 +393,7 @@ table.list {
 
 table.rails {
   td, th {
-    border: 1px solid $border;
+    border: 1px solid $color-border;
     padding: 3px;
   }
 
@@ -487,7 +481,7 @@ form {
 /*==================================================== Form ==========================================================*/
 table.form {
   th, td {
-    border: 1px solid $border;
+    border: 1px solid $color-border;
     padding: 5px;
   }
   td.error {
