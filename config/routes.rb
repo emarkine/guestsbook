@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :rooms
   get 'site/index'
   root to: 'site#index'
 
