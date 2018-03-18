@@ -1,3 +1,8 @@
 %h1= @title
 -#=image_tag 'building.jpg'
 %p= t('apartment.description')
+- Room.all.each do |room|
+  .room
+    .name
+      =link_to t("room.#{room.name}.name"), room
+

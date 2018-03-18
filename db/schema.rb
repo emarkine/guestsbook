@@ -60,11 +60,7 @@ ActiveRecord::Schema.define(version: 20180103164331) do
   end
 
   create_table "rooms", force: :cascade do |t|
-    t.string "title"
     t.string "name"
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "sessions", force: :cascade do |t|

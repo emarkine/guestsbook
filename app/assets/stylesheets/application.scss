@@ -2,7 +2,6 @@
  *= require_tree .
  *= require_self
  */
-
 @import "variables";
 
 /*==================================================== Global ========================================================*/
@@ -18,7 +17,7 @@ body, p, ol, ul, td, div, input, textarea, select {
 
 h1 {
   color: $color-brown;
-
+  font-size: $font-size-h1;
 }
 
 p {
@@ -55,16 +54,24 @@ img {
   border: 0px;
 }
 
-/*========================================================== Layout =================================================*/
+a {
+  text-decoration: none;
+  color: $color-text;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*================================================ Layout ===========================================================*/
 
 #center-absolute {
-  position:absolute;
-  top:50%;
-  left:50%;
-  padding:15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
   -ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #center {
@@ -75,7 +82,6 @@ img {
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
 }
-
 
 #header {
   //min-width: 1200px;
@@ -239,23 +245,12 @@ img {
   }
 }
 
-
-
 /*=================================================== Classes =======================================================*/
 
 .line {
   float: left;
   clear: both;
   margin-bottom: 5px;
-  a {
-    padding-left: 5px;
-    text-decoration: none;
-    color: $color-text;
-    font-weight: bold;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
 }
 
 .action {
@@ -479,7 +474,6 @@ form {
   float: left;
 }
 
-
 /*==================================================== Form ==========================================================*/
 table.form {
   th, td {
@@ -494,5 +488,24 @@ table.form {
   }
   input[type=image] {
     float: right;
+  }
+}
+
+/*=================================================== Room ===========================================================*/
+
+.room {
+  float: left;
+  clear: both;
+  .name {
+    float: left;
+    clear: both;
+    font-size: $font-size-h1;
+    a {
+      text-decoration: none;
+      color: $color-brown;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }

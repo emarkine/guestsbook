@@ -28,13 +28,16 @@ en:
     description: |
       The apartment is located in a quiet residential area in the heart of North Amsterdam near the park and a large shopping center.
       Near the building are two large toll parking with the lowest price in the city.
-      The apartments contain sleeping rooms, a living room with a computer for guests, a separate toilet and bathroom.
+      The apartments contain sleeping rooms, a living room with a library and computer for guests, a separate toilet and bathroom.
       The kitchen is equipped with a gas cooker, microwave, refrigerator, kettle, juicer and cookware.
       The shower, toilet and kitchen are common areas.
       Please clean the bathroom after using and wash the dishes in the kitchen.
       Free Wi-Fi is available.
 
   room:
+
+    yacht:
+      name: yacht
 
     wave:
       name: wave
@@ -47,3 +50,6 @@ en:
       title: small room with teddy bear
       description: |
         A small cozy room is ideal for single travelers.
+
+    globe:
+      name: globe
