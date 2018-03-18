@@ -78,9 +78,9 @@ img {
 
 
 #header {
-  //min-width: 800px;
+  //min-width: 1200px;
   //margin-top: 30px;
-  width: 100%;
+  width: 1000px;
   padding: 10px;
   float: left;
   clear: both;
@@ -90,6 +90,9 @@ img {
     width: 65px;
     height: 80px;
     overflow: hidden;
+    a {
+      background: white;
+    }
     img {
       width: 65px;
       height: 80px;
@@ -98,8 +101,8 @@ img {
   #splash {
     float: left;
     height: 80px;
-    width: 1100px;
-    padding: 0px 5px 0px 10px;
+    width: 850px;
+    padding-left: 5px;
     canvas {
       z-index: 1;
       position: relative;
@@ -130,7 +133,7 @@ img {
     float: right;
     vertical-align: top;
     height: 80px;
-    width: 100px;
+    width: 50px;
     #login {
       float: right;
       margin: 0px;
@@ -167,8 +170,6 @@ img {
       float: right;
       vertical-align: top;
       height: 20px;
-      padding-top: 5px;
-      margin-right: 10px;
       //      form {
       //        select {
       //          text-align: right;
@@ -234,6 +235,7 @@ img {
   }
   #copyright {
     float: right;
+    padding-right: 15px;
   }
 }
 

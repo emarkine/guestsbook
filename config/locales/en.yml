@@ -1,14 +1,14 @@
 en:
-  title: Lucy Apartment
+
+  title: Intelligent Apartment
   home: home
   create: create
   update: update
   send: send
-  email: 'lucy.marketram@gmail.com'
+  email: 'guestsbook.eu@gmail.com'
   phone: '+31634060400'
   contact_reservation: 'Please contact for the reservation:'
 
-# login block
   password: password
   login: login
   logout: logout
@@ -17,10 +17,33 @@ en:
   logged_in: "%{user} successfully logged in"
   logged_out: "%{user} successfully logged out"
 
+  menu:
+    rooms: rooms
+    calendar: calendar
+
+  calendar:
+    title: calendar
+
   apartment:
-    title: Welcome to Lucy Apartment
+    description: |
+      The apartment is located in a quiet residential area in the heart of North Amsterdam near the park and a large shopping center.
+      Near the building are two large toll parking with the lowest price in the city.
+      The apartments contain sleeping rooms, a living room with a computer for guests, a separate toilet and bathroom.
+      The kitchen is equipped with a gas cooker, microwave, refrigerator, kettle, juicer and cookware.
+      The shower, toilet and kitchen are common areas.
+      Please clean the bathroom after using and wash the dishes in the kitchen.
+      Free Wi-Fi is available.
+
   room:
-    single:
-      share: kitchen, bathroom and toilet
-      name: Small Room with Teddy Bear
-      hello: You will not be bored in Amsterdam because you have a nice teddy bear. A small cozy room is ideal for travelers.
+
+    wave:
+      name: wave
+      title: double nautical room
+      description: |
+        A room with a comfortable double bed, a sofa, a wardrobe and modern led lighting.
+
+    teddy:
+      name: teddy
+      title: small room with teddy bear
+      description: |
+        A small cozy room is ideal for single travelers.

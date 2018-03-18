@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  resources :rooms
-  get 'site/index'
   root to: 'site#index'
+  get 'site/index'
+  get '/locale' => 'site#locale'
+
+  resources :rooms
+
+  get '/calendar' => 'calendar#index'
 
   resources :users
   get '/user/:name' => 'users#show'
