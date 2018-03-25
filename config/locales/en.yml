@@ -1,6 +1,6 @@
 en:
 
-  title: Intelligent Apartment
+  title: Neuro Rooms
   home: home
   create: create
   update: update
@@ -40,7 +40,7 @@ en:
       name: yacht
 
     wave:
-      name: wave
+      name:
       title: double nautical room
       description: |
         A room with a comfortable double bed, a sofa, a wardrobe and modern led lighting.
