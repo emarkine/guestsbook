@@ -86,7 +86,7 @@ a:hover {
 #header {
   //min-width: 1200px;
   //margin-top: 30px;
-  width: 1000px;
+  width: 100%;
   padding: 10px;
   float: left;
   clear: both;
@@ -107,7 +107,7 @@ a:hover {
   #splash {
     float: left;
     height: 80px;
-    width: 850px;
+    width: 800px;
     padding-left: 5px;
     canvas {
       z-index: 1;
